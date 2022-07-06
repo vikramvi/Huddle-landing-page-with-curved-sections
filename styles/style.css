@@ -78,3 +78,90 @@ img {
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
 /* --------------------------- specific styling --------------------------- */
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
+
+/* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
+
+/* Component 1 grid areas */
+.header-component {
+  grid-area: header-component;
+}
+
+.header-component__image-section {
+  grid-area: header-component__image-section;
+}
+
+.header-component__info-section {
+  grid-area: header-component__info-section;
+}
+
+/* Component 2 grid areas */
+.screen-mockups-component {
+  grid-area: screen-mockups-component;
+}
+
+/* Component 3 grid areas */
+.stats-component {
+  grid-area: stats-component;
+}
+
+.stats-component__communities-count {
+  grid-area: stats-component__communities-count;
+}
+
+.stats-component__messages-count {
+  grid-area: stats-component__messages-count;
+}
+
+/* Component 4 grid areas */
+
+.grow-together-component {
+  grid-area: grow-together-component;
+}
+
+/* Component 5 grid areas */
+
+.conversations-component {
+  grid-area: conversations-component;
+}
+
+/* Component 6 grid areas */
+.your-users-component {
+  grid-area: your-users-component;
+}
+
+/* Component 7 grid areas */
+
+.build-community-component {
+  grid-area: build-community-component;
+}
+
+/* Component 8 grid areas */
+.footer-component {
+  grid-area: footer-component;
+}
+
+.footer-component__newsletter-section {
+  grid-area: footer-component__newsletter-section;
+}
+
+.footer-component__company-info-section {
+  grid-area: footer-component__company-info-section;
+}
+
+.contact-us-section {
+  grid-area: contact-us-section;
+}
+
+.contact-us-section__phone {
+  grid-area: contact-us-section__phone;
+}
+
+.contact-us__email {
+  grid-area: contact-us__email;
+}
+
+/* Component 9 grid areas */
+
+.footer-component__social-section {
+  grid-area: footer-component__social-section;
+}
