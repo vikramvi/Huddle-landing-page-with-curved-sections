@@ -112,7 +112,8 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 1rem;
+  align-items: center;
+  padding: 2rem 1.2rem 0 1.2rem;
 }
 
 .header-component__image-section > img {
@@ -156,6 +157,58 @@ img {
   color: white;
   border-radius: 3rem;
   padding: 0.9rem 3.6rem;
+}
+
+/* Componet 2 */
+.screen-mockups-component {
+  width: 90%;
+  justify-self: center;
+}
+
+/* Componet 3 */
+.stats-component {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  align-items: center;
+}
+
+.stats-component__communities-count {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.stats-component__communities-count > img {
+  width: 18%;
+}
+
+.stats-component__communities-count > h2 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.stats-component__communities-count > p {
+  font-size: 1.8rem;
+}
+
+.stats-component__messages-count {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.stats-component__messages-count > img {
+  width: 18%;
+}
+
+.stats-component__messages-count > h2 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.stats-component__messages-count > p {
+  font-size: 1.8rem;
 }
 
 /* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
