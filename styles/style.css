@@ -73,11 +73,90 @@ header,
 footer,
 article,
 img {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
 /* --------------------------- specific styling --------------------------- */
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
+
+/* ----------- ----------- ----------- mobile first approach ----------- ----------- ----------- */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header-component"
+    "screen-mockups-component"
+    "stats-component"
+    "grow-together-component"
+    "conversations-component"
+    "your-users-component"
+    "build-community-component"
+    "footer-component";
+  gap: 4rem;
+
+  width: 37.5rem; /* value as per style guide */
+}
+
+/* Componet 1 */
+.header-component {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header-component__image-section"
+    "header-component__info-section";
+  gap: 4rem;
+}
+
+.header-component__image-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.header-component__image-section > img {
+  width: 30%;
+  height: 18px;
+}
+
+.header-component__image-section > button {
+  width: 25%;
+  background-color: white;
+  border-radius: 3rem;
+  border: 1px solid pink;
+  padding: 0.2rem 0;
+}
+
+.header-component__info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.header-component__info-section > h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 3.3rem;
+
+  padding: 0 4rem;
+
+  text-align: center;
+}
+
+.header-component__info-section > p {
+  line-height: 2.4rem;
+  padding: 0 3.2rem;
+  text-align: center;
+}
+
+.header-component__info-section > button {
+  background-color: pink;
+  color: white;
+  border-radius: 3rem;
+  padding: 0.9rem 3.6rem;
+}
 
 /* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
 
@@ -159,8 +238,6 @@ img {
 .contact-us__email {
   grid-area: contact-us__email;
 }
-
-/* Component 9 grid areas */
 
 .footer-component__social-section {
   grid-area: footer-component__social-section;
