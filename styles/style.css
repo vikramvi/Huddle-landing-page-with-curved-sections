@@ -1,0 +1,80 @@
+/* Write GOOD comments so that next developer ... */
+/* ( who happens to be a killer psycopath & knows where you stay ). */
+/* He's going to maintain this code; need NOT have to get back to you */
+
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+/* --------------------------- generic styling --------------------------- */
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+:root {
+  /* color */
+
+  --clr-primary-pink: hsl(322, 100%, 66%);
+  --clr-primary-light-pink: hsl(321, 100%, 78%);
+  --clr-primary-light-red: hsl(0, 100%, 63%);
+
+  --clr-neutral-very-dark-cyan: hsl(192, 100%, 9%);
+  --clr-neutral-very-pale-blue: hsl(207, 100%, 98%);
+
+  /* font */
+
+  --ff-body: "Open Sans", sans-serif;
+  --ff-headings: "Poppins", sans-serif;
+
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* typography */
+html {
+  /* 62.5% of 16px browser font size is 10px */
+  font-size: 62.5%;
+  line-height: 1.15;
+}
+
+body {
+  /* 16px */
+  font-size: 1.6em;
+
+  /* font-weight:         
+    font-family: var(--ff-primary);
+    min-height: 100vh;
+    background-color: var(--color-main-bg);  */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* apply spacing for all paragraph text */
+p {
+  line-height: 1.7;
+}
+
+/* debug purpose only */
+
+header,
+footer,
+article,
+img {
+  border: 1px solid red;
+}
+/* ----------- ----------- ----------- ----------- ----------- ------------ */
+/* --------------------------- specific styling --------------------------- */
+/* ----------- ----------- ----------- ----------- ----------- ------------ */
