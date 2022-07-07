@@ -351,6 +351,11 @@ img {
   padding: 4rem;
 }
 
+.footer-component__company-info-section > img {
+  filter: invert(99%) sepia(14%) saturate(0%) hue-rotate(89deg) brightness(102%)
+    contrast(100%);
+}
+
 .contact-us-section__phone,
 .contact-us__email {
   display: flex;
