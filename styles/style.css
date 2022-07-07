@@ -73,7 +73,7 @@ header,
 footer,
 article,
 img {
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
 /* --------------------------- specific styling --------------------------- */
@@ -100,7 +100,7 @@ img {
   width: 37.5rem; /* value as per style guide */
 }
 
-/* Componet 1 */
+/* style 1st component - mobile */
 .header-component {
   display: grid;
   grid-template-columns: 1fr;
@@ -155,19 +155,19 @@ img {
 }
 
 .header-component__info-section > button {
-  background-color: pink;
+  background-color: hsl(322, 100%, 66%);
   color: white;
   border-radius: 3rem;
   padding: 0.9rem 3.6rem;
 }
 
-/* Componet 2 */
+/* style 2nd component - mobile */
 .screen-mockups-component {
   width: 90%;
   justify-self: center;
 }
 
-/* Componet 3 */
+/* style 3rd component - mobile */
 .stats-component {
   display: flex;
   flex-direction: column;
@@ -213,9 +213,9 @@ img {
   font-size: 1.8rem;
 }
 
-/* Componet 4 */
-/* Componet 5 */
-/* Componet 6 */
+/* style 4th component - mobile */
+/* style 5th component - mobile */
+/* style 6th component - mobile */
 .grow-together-component__main,
 .your-users-component__main {
   background-color: var(--clr-neutral-very-pale-blue);
@@ -269,7 +269,7 @@ img {
   line-height: 1.45;
 }
 
-/* Componet 7 */
+/* style 7th component - mobile */
 .build-community-component {
   display: flex;
   flex-direction: column;
@@ -294,8 +294,9 @@ img {
   color: white;
 }
 
-/* Componet 8 */
+/* style 8th component - mobile */
 .footer-component {
+  /* position background color - https://stackoverflow.com/questions/8558502/background-position-for-background-color*/
   background: linear-gradient(to top, hsl(192, 100%, 9%), hsl(192, 100%, 9%))
     no-repeat 0px 5.3rem;
   color: white;
@@ -351,6 +352,9 @@ img {
   padding: 4rem;
 }
 
+/* change SVG color */
+/* https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element/53336754#53336754 */
+/* https://www.w3schools.com/colors/colors_picker.asp */
 .footer-component__company-info-section > img {
   filter: invert(99%) sepia(14%) saturate(0%) hue-rotate(89deg) brightness(102%)
     contrast(100%);
@@ -379,6 +383,88 @@ img {
 
 .footer-component__social-section > i {
   font-size: 3rem;
+}
+
+/* ----------- ----------- ----------- desktop second approach ----------- ----------- ----------- */
+
+@media screen and (min-width: 42rem) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header-component"
+      "screen-mockups-component"
+      "stats-component"
+      "grow-together-component"
+      "conversations-component"
+      "your-users-component"
+      "build-community-component"
+      "footer-component";
+    gap: 8rem;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 144rem;
+  }
+
+  /* component 1 - desktop */
+  .header-component {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header-component__image-section"
+      "header-component__info-section";
+    gap: 12rem;
+  }
+
+  .header-component__image-section {
+    width: 60%;
+    justify-self: center;
+
+    padding: 6rem 1.2rem 0 1.2rem;
+  }
+
+  .header-component__image-section > img {
+    width: 16%;
+    height: 22px;
+  }
+
+  .header-component__image-section > button {
+    width: 10%;
+    font-size: 1.25rem;
+    padding: 0.4rem 0;
+  }
+
+  .header-component__info-section {
+    width: 50%;
+    justify-self: center;
+  }
+
+  .header-component__info-section > h1 {
+    font-size: 3rem;
+  }
+
+  .header-component__info-section > p {
+    width: 60%;
+    padding: 0;
+  }
+
+  .header-component__info-section > button {
+    width: 30%;
+    padding: 1.3rem 0;
+    font-size: 1.35rem;
+  }
+
+  /* component 2 - desktop */
+  .screen-mockups-component {
+    width: 50%;
+  }
+  /* component 3 - desktop */
+  /* component 4 - desktop */
+  /* component 5 - desktop */
+  /* component 6 - desktop */
+  /* component 7 - desktop */
+  /* component 8 - desktop */
 }
 
 /* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
