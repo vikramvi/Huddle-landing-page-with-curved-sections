@@ -459,7 +459,19 @@ img {
   .screen-mockups-component {
     width: 50%;
   }
+
   /* component 3 - desktop */
+  .stats-component {
+    justify-self: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 40%;
+  }
+
   /* component 4 - desktop */
   /* component 5 - desktop */
   /* component 6 - desktop */
