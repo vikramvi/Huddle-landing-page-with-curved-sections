@@ -269,6 +269,113 @@ img {
   line-height: 1.45;
 }
 
+/* Componet 7 */
+.build-community-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.build-community-component > h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+
+  line-height: 1.4;
+
+  text-align: center;
+}
+
+.build-community-component > button {
+  padding: 1rem 2.8rem;
+  border-radius: 2rem;
+  background-color: pink;
+  border: none;
+  color: white;
+}
+
+/* Componet 8 */
+.footer-component {
+  background: linear-gradient(to top, hsl(192, 100%, 9%), hsl(192, 100%, 9%))
+    no-repeat 0px 5.3rem;
+  color: white;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "footer-component__footer-top-img"
+    "footer-component__newsletter-section"
+    "footer-component__company-info-section"
+    "contact-us-section"
+    "footer-component__social-section";
+  gap: 4rem;
+}
+
+.footer-component__newsletter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 2rem 4rem;
+}
+
+.footer-component__newsletter-section > h2 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+
+.footer-component__newsletter-section > input {
+  height: 4.2rem;
+  border-radius: 1rem;
+}
+
+.footer-component__newsletter-section > button {
+  height: 4.2rem;
+  width: 50%;
+  align-self: end;
+  background-color: pink;
+  color: white;
+  border-radius: 1rem;
+}
+
+.footer-component__newsletter-section > label {
+  display: none;
+}
+
+.footer-component__company-info-section,
+.contact-us-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 4rem;
+}
+
+.contact-us-section__phone,
+.contact-us__email {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.contact-us-section__phone > img,
+.contact-us__email > img {
+  width: 8%;
+  height: 77%;
+}
+
+.footer-component__social-section {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+  padding: 0 4rem 4rem 4rem;
+}
+
+.footer-component__social-section > i {
+  font-size: 3rem;
+}
+
 /* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
 
 /* Component 1 grid areas */
@@ -328,6 +435,10 @@ img {
 /* Component 8 grid areas */
 .footer-component {
   grid-area: footer-component;
+}
+
+.footer-component__footer-top-img {
+  grid-area: footer-component__footer-top-img;
 }
 
 .footer-component__newsletter-section {
