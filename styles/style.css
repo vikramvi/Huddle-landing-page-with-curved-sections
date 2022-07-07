@@ -79,6 +79,8 @@ img {
 /* --------------------------- specific styling --------------------------- */
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
 
+/* ?? Utility classes for font, color to keep CSS DRY */
+
 /* ----------- ----------- ----------- mobile first approach ----------- ----------- ----------- */
 
 .grid-container {
@@ -93,7 +95,7 @@ img {
     "your-users-component"
     "build-community-component"
     "footer-component";
-  gap: 4rem;
+  gap: 10rem;
 
   width: 37.5rem; /* value as per style guide */
 }
@@ -209,6 +211,62 @@ img {
 
 .stats-component__messages-count > p {
   font-size: 1.8rem;
+}
+
+/* Componet 4 */
+/* Componet 5 */
+/* Componet 6 */
+.grow-together-component__main,
+.your-users-component__main {
+  background-color: var(--clr-neutral-very-pale-blue);
+
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: center;
+
+  padding: 8rem 0 6rem 0;
+}
+
+.conversations-component {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: center;
+}
+
+.your-users-component__main {
+  padding: 4rem 0 6rem 0;
+}
+
+.grow-together-component__main > section,
+.your-users-component__main > section,
+.conversations-component > section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  text-align: center;
+}
+
+.grow-together-component__main > img,
+.your-users-component__main > img,
+.conversations-component > img {
+  width: 80%;
+}
+
+.grow-together-component__main > section > h2,
+.your-users-component__main > section > h2,
+.conversations-component > section > h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.grow-together-component__main > section > p,
+.your-users-component__main > section > p,
+.conversations-component > section > p {
+  padding: 0 2rem;
+  line-height: 1.45;
 }
 
 /* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
