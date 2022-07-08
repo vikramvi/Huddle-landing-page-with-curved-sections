@@ -289,7 +289,7 @@ img {
 .build-community-component > button {
   padding: 1rem 2.8rem;
   border-radius: 2rem;
-  background-color: pink;
+  background-color: hsl(322, 100%, 66%);
   border: none;
   color: white;
 }
@@ -559,6 +559,18 @@ img {
   }
 
   /* component 7 - desktop */
+  .build-community-component {
+    width: 60%;
+    justify-self: center;
+    gap: 2.5rem;
+  }
+
+  .build-community-component > button {
+    width: 28%;
+    font-size: 1.2rem;
+    padding: 1.5rem 0;
+  }
+
   /* component 8 - desktop */
 }
 
