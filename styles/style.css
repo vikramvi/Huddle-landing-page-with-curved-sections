@@ -355,7 +355,7 @@ img {
 /* change SVG color */
 /* https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element/53336754#53336754 */
 /* https://www.w3schools.com/colors/colors_picker.asp */
-.footer-component__company-info-section > img {
+.footer-component__company-info-section > figure > img {
   filter: invert(99%) sepia(14%) saturate(0%) hue-rotate(89deg) brightness(102%)
     contrast(100%);
 }
@@ -582,6 +582,7 @@ img {
       "footer-component__company-info-section  footer-component__newsletter-section"
       "contact-us-section footer-component__newsletter-section"
       "footer-component__social-section footer-component__newsletter-section";
+    gap: 0;
 
     background: linear-gradient(to top, hsl(192, 100%, 9%), hsl(192, 100%, 9%))
       no-repeat 0px 12.6rem;
@@ -618,6 +619,15 @@ img {
 
   .footer-component__newsletter-section > button {
     width: 100%;
+  }
+
+  .footer-component__company-info-section > figure {
+    width: 40%;
+  }
+
+  .footer-component__company-info-section > p {
+    font-size: 1.3rem;
+    width: 50%;
   }
 }
 
