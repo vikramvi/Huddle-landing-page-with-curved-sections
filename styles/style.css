@@ -334,7 +334,7 @@ img {
   height: 4.2rem;
   width: 50%;
   align-self: end;
-  background-color: pink;
+  background-color: hsl(322, 100%, 66%);
   color: white;
   border-radius: 1rem;
 }
@@ -572,6 +572,53 @@ img {
   }
 
   /* component 8 - desktop */
+  .footer-component {
+    width: 80%;
+    justify-self: center;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "footer-component__footer-top-img footer-component__footer-top-img "
+      "footer-component__company-info-section  footer-component__newsletter-section"
+      "contact-us-section footer-component__newsletter-section"
+      "footer-component__social-section footer-component__newsletter-section";
+
+    background: linear-gradient(to top, hsl(192, 100%, 9%), hsl(192, 100%, 9%))
+      no-repeat 0px 12.6rem;
+  }
+
+  .footer-component__footer-top-img {
+    content: url("../images/bg-footer-top-desktop.svg");
+    width: 100%;
+  }
+
+  .footer-component__newsletter-section {
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
+    grid-template-areas:
+      "footer-component__newsletter-section-header ."
+      "footer-component__newsletter-section-info ."
+      "footer-component__newsletter-section-input footer-component__newsletter-section-button";
+    grid-template-rows: 35px 90px 43px;
+    gap: 0;
+  }
+
+  .footer-component__newsletter-section > h2 {
+    font-size: 1.8rem;
+  }
+
+  .footer-component__newsletter-section > p {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+
+  .footer-component__newsletter-section > input {
+    width: 90%;
+  }
+
+  .footer-component__newsletter-section > button {
+    width: 100%;
+  }
 }
 
 /* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
@@ -641,6 +688,22 @@ img {
 
 .footer-component__newsletter-section {
   grid-area: footer-component__newsletter-section;
+}
+
+.footer-component__newsletter-section-header {
+  grid-area: footer-component__newsletter-section-header;
+}
+
+.footer-component__newsletter-section-info {
+  grid-area: footer-component__newsletter-section-info;
+}
+
+.footer-component__newsletter-section-input {
+  grid-area: footer-component__newsletter-section-input;
+}
+
+.footer-component__newsletter-section-button {
+  grid-area: footer-component__newsletter-section-button;
 }
 
 .footer-component__company-info-section {
