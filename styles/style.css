@@ -73,7 +73,7 @@ header,
 footer,
 article,
 img {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
 /* --------------------------- specific styling --------------------------- */
@@ -367,8 +367,8 @@ img {
   gap: 3rem;
 }
 
-.contact-us-section__phone > img,
-.contact-us__email > img {
+.contact-us-section__phone > figure,
+.contact-us__email > figure {
   width: 8%;
   height: 77%;
 }
@@ -415,28 +415,32 @@ img {
       "header-component__image-section"
       "header-component__info-section";
     gap: 12rem;
+
+    width: 60%;
+    justify-self: center;
   }
 
   .header-component__image-section {
-    width: 60%;
+    width: 100%;
     justify-self: center;
 
     padding: 6rem 1.2rem 0 1.2rem;
   }
 
   .header-component__image-section > img {
-    width: 16%;
-    height: 22px;
+    width: 22%;
+    height: 28px;
   }
 
   .header-component__image-section > button {
-    width: 10%;
+    width: 14%;
     font-size: 1.25rem;
-    padding: 0.4rem 0;
+    padding: 0.8rem 0;
+    text-transform: capitalize;
   }
 
   .header-component__info-section {
-    width: 50%;
+    width: 80%;
     justify-self: center;
   }
 
@@ -450,8 +454,8 @@ img {
   }
 
   .header-component__info-section > button {
-    width: 30%;
-    padding: 1.3rem 0;
+    width: 40%;
+    padding: 1.8rem 0;
     font-size: 1.35rem;
   }
 
@@ -573,7 +577,7 @@ img {
 
   /* component 8 - desktop */
   .footer-component {
-    width: 80%;
+    width: 60%;
     justify-self: center;
 
     grid-template-columns: repeat(2, 1fr);
@@ -585,12 +589,13 @@ img {
     gap: 0;
 
     background: linear-gradient(to top, hsl(192, 100%, 9%), hsl(192, 100%, 9%))
-      no-repeat 0px 12.6rem;
+      no-repeat 0px 9.5rem;
   }
 
   .footer-component__footer-top-img {
     content: url("../images/bg-footer-top-desktop.svg");
     width: 100%;
+    padding-bottom: 6rem;
   }
 
   .footer-component__newsletter-section {
@@ -621,13 +626,31 @@ img {
     width: 100%;
   }
 
+  .footer-component__company-info-section {
+    padding: 2rem 4rem 1.5rem 8rem;
+  }
+
   .footer-component__company-info-section > figure {
     width: 40%;
   }
 
   .footer-component__company-info-section > p {
     font-size: 1.3rem;
-    width: 50%;
+    width: 55%;
+  }
+
+  .contact-us-section {
+    gap: 1.5rem;
+    padding: 0 4rem 0 8rem;
+  }
+
+  .contact-us-section__phone,
+  .contact-us__email {
+    height: 22px;
+  }
+
+  .footer-component__social-section {
+    padding: 6rem 4rem 6rem 8rem;
   }
 }
 
