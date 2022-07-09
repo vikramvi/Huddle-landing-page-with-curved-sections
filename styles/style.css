@@ -581,6 +581,7 @@ img {
   .your-users-component__main > section {
     text-align: start;
     margin-left: 4rem;
+    align-items: flex-start;
   }
 
   .grow-together-component__main > section > h2,
@@ -592,7 +593,8 @@ img {
   .your-users-component__main > section > p {
     padding: 0;
     font-size: 1.3rem;
-    width: 90%;
+    width: 97%;
+    text-align: start;
   }
 
   .grow-together-component__bottom-img {
@@ -620,8 +622,8 @@ img {
   }
 
   .conversations-component > section {
-    text-align: start;
-    width: 75%;
+    width: 100%;
+    align-items: flex-start;
   }
 
   .conversations-component > section > h2 {
@@ -631,6 +633,8 @@ img {
   .conversations-component > section > p {
     padding: 0;
     font-size: 1.3rem;
+    text-align: start;
+    width: 100%;
   }
 
   /* component 7 - desktop */
