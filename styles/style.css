@@ -127,8 +127,10 @@ img {
   width: 25%;
   background-color: white;
   border-radius: 3rem;
-  border: 1px solid pink;
+  border: 1px solid var(--clr-primary-pink);
   padding: 0.2rem 0;
+  color: 1px solid var(--clr-primary-pink);
+  box-shadow: 0 0 4px var(--clr-primary-pink);
 }
 
 .header-component__info-section {
@@ -155,10 +157,18 @@ img {
 }
 
 .header-component__info-section > button {
-  background-color: hsl(322, 100%, 66%);
-  color: white;
+  border: none;
   border-radius: 3rem;
+
+  background-color: var(--clr-primary-pink);
+  color: white;
+
   padding: 0.9rem 3.6rem;
+
+  font-family: var(--ff-body);
+  font-weight: var(--fw-600);
+
+  box-shadow: 0px 5px 10px 0px var(--clr-primary-light-pink);
 }
 
 /* style 2nd component - mobile */
@@ -187,11 +197,13 @@ img {
 
 .stats-component__communities-count > h2 {
   font-size: 6rem;
-  font-weight: bold;
+  font-family: var(--ff-headings);
+  font-weight: var(--fw-600);
 }
 
 .stats-component__communities-count > p {
   font-size: 1.8rem;
+  font-family: var(--ff-body);
 }
 
 .stats-component__messages-count {
@@ -206,11 +218,13 @@ img {
 
 .stats-component__messages-count > h2 {
   font-size: 6rem;
-  font-weight: bold;
+  font-family: var(--ff-headings);
+  font-weight: --fw-600;
 }
 
 .stats-component__messages-count > p {
   font-size: 1.8rem;
+  font-family: var(--ff-body);
 }
 
 /* style 4th component - mobile */
@@ -287,11 +301,18 @@ img {
 }
 
 .build-community-component > button {
-  padding: 1rem 2.8rem;
-  border-radius: 2rem;
-  background-color: hsl(322, 100%, 66%);
   border: none;
+  border-radius: 3rem;
+
+  padding: 1rem 2.8rem;
+
+  background-color: var(--clr-primary-pink);
   color: white;
+
+  font-family: var(--ff-body);
+  font-weight: var(--fw-600);
+
+  box-shadow: 0px 5px 10px 0px var(--clr-primary-light-pink);
 }
 
 /* style 8th component - mobile */
@@ -330,13 +351,21 @@ img {
   border-radius: 1rem;
 }
 
-.footer-component__newsletter-section > button {
-  height: 4.2rem;
+.footer-component__newsletter-section-button {
+  border: none;
+  border-radius: 0.6rem;
+
+  height: 3.6rem;
   width: 50%;
+
   align-self: end;
-  background-color: hsl(322, 100%, 66%);
+
+  background-color: var(--clr-primary-pink);
   color: white;
-  border-radius: 1rem;
+
+  font-family: var(--ff-body);
+  font-size: 1.2rem;
+  font-weight: var(--fw-600);
 }
 
 .footer-component__newsletter-section > label {
@@ -440,21 +469,26 @@ img {
   }
 
   .header-component__info-section {
-    width: 80%;
+    width: 85%;
     justify-self: center;
   }
 
   .header-component__info-section > h1 {
     font-size: 3rem;
+    font-family: var(--ff-headings);
   }
 
   .header-component__info-section > p {
-    width: 60%;
+    width: 55%;
     padding: 0;
+
+    font-family: var(--ff-body);
+    font-weight: var(--fw-400);
+    font-size: 1.3rem;
   }
 
   .header-component__info-section > button {
-    width: 40%;
+    width: 35%;
     padding: 1.8rem 0;
     font-size: 1.35rem;
   }
@@ -474,6 +508,16 @@ img {
     align-items: center;
 
     width: 40%;
+  }
+
+  .stats-component__communities-count > h2,
+  .stats-component__messages-count > h2 {
+    font-size: 5rem;
+  }
+
+  .stats-component__communities-count > p,
+  .stats-component__messages-count > p {
+    font-size: 1.5rem;
   }
 
   /* component 4 - desktop */
@@ -521,7 +565,7 @@ img {
   .your-users-component__main > section > p {
     padding: 0;
     font-size: 1.3rem;
-    width: 83%;
+    width: 90%;
   }
 
   .grow-together-component__bottom-img {
@@ -550,7 +594,7 @@ img {
 
   .conversations-component > section {
     text-align: start;
-    width: 65%;
+    width: 75%;
   }
 
   .conversations-component > section > h2 {
@@ -571,8 +615,10 @@ img {
 
   .build-community-component > button {
     width: 28%;
+
     font-size: 1.2rem;
-    padding: 1.5rem 0;
+
+    padding: 1.8rem 0;
   }
 
   /* component 8 - desktop */
@@ -600,13 +646,16 @@ img {
 
   .footer-component__newsletter-section {
     display: grid;
-    grid-template-columns: 1.35fr 0.65fr;
+    grid-template-columns: 1.3fr 0.7fr;
     grid-template-areas:
       "footer-component__newsletter-section-header ."
       "footer-component__newsletter-section-info ."
       "footer-component__newsletter-section-input footer-component__newsletter-section-button";
-    grid-template-rows: 35px 90px 43px;
-    gap: 0;
+    grid-template-rows: 35px 90px 36px;
+    column-gap: 1.5rem;
+    row-gap: 0;
+
+    padding-left: 0;
   }
 
   .footer-component__newsletter-section > h2 {
@@ -615,11 +664,12 @@ img {
 
   .footer-component__newsletter-section > p {
     font-size: 1.2rem;
-    width: 80%;
+    width: 100%;
   }
 
   .footer-component__newsletter-section > input {
-    width: 90%;
+    width: 92%;
+    height: 3.6rem;
   }
 
   .footer-component__newsletter-section > button {
@@ -636,7 +686,7 @@ img {
 
   .footer-component__company-info-section > p {
     font-size: 1.3rem;
-    width: 55%;
+    width: 75%;
   }
 
   .contact-us-section {
@@ -647,6 +697,15 @@ img {
   .contact-us-section__phone,
   .contact-us__email {
     height: 22px;
+    gap: 1rem;
+    align-content: center;
+  }
+
+  .contact-us-section__phone > p,
+  .contact-us__email > p {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-400);
+    font-size: 1.2rem;
   }
 
   .footer-component__social-section {
