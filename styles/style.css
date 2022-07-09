@@ -268,8 +268,6 @@ img {
   align-items: center;
 }
 
-/* .grow-together-component__main > section, */
-/* .your-users-component__main > section, */
 .conversations-component > section {
   display: flex;
   flex-direction: column;
@@ -277,12 +275,11 @@ img {
   align-items: center;
 }
 
-.grow-together-component__main-img {
+.grow-together-component__main-img,
+.your-users-component__main-img {
   width: 80%;
 }
 
-/* .grow-together-component__main > figure, */
-.your-users-component__main > figure,
 .conversations-component > figure {
   width: 80%;
 }
@@ -578,13 +575,6 @@ img {
     content: url("../images/bg-section-top-desktop-2.svg");
   }
 
-  /* .grow-together-component__main, */
-  /* .your-users-component__main {
-    flex-direction: row-reverse;
-    padding: 2rem 8rem;
-    gap: 0;
-  } */
-
   .grow-together-component__main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -606,12 +596,6 @@ img {
     max-width: 37rem;
   }
 
-  /* .grow-together-component__main > figure, */
-  /* .your-users-component__main > figure {
-    width: 100%;
-    max-width: 50%;
-  } */
-
   .grow-together-component__main-info,
   .your-users-component__main-info {
     align-items: flex-start;
@@ -625,13 +609,6 @@ img {
     /* padding will change size of componet / card, margin won't change size / shape of component / card */
     margin-left: 10rem;
   }
-
-  /* .grow-together-component__main > section, */
-  /* .your-users-component__main > section {
-    align-items: flex-start;
-    max-width: 90%;
-    width: 100%;
-  } */
 
   .grow-together-component__main > section > h2,
   .your-users-component__main > section > h2 {
@@ -696,6 +673,7 @@ img {
   /* component 7 - desktop */
   .build-community-component {
     width: 80%;
+
     justify-self: center;
     gap: 2.5rem;
 
