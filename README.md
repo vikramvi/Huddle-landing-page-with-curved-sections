@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: (https://vikramvi.github.io/Huddle-landing-page-with-curved-sections/)
+- [Live Website](https://vikramvi.github.io/Huddle-landing-page-with-curved-sections/)
 
 ## My process
 
