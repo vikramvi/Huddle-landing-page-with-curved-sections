@@ -50,6 +50,7 @@ html {
 body {
   /* 16px */
   font-size: 1.6em;
+  /* width: 100%; */
 
   /* font-weight:         
     font-family: var(--ff-primary);
@@ -97,7 +98,9 @@ img {
     "footer-component";
   gap: 10rem;
 
-  width: 37.5rem; /* value as per style guide */
+  /* width: 100%; */
+  /* value as per style guide */
+  min-width: 37.5rem;
 }
 
 /* style 1st component - mobile */
@@ -237,6 +240,12 @@ img {
 /* style 4th component - mobile */
 /* style 5th component - mobile */
 /* style 6th component - mobile */
+.grow-together-component,
+.your-users-component {
+  display: flex;
+  flex-direction: column;
+}
+
 .grow-together-component__main,
 .your-users-component__main {
   background-color: var(--clr-neutral-very-pale-blue);
@@ -352,6 +361,10 @@ img {
     "contact-us-section"
     "footer-component__social-section";
   gap: 4rem;
+}
+
+.footer-component__footer-top-img > img {
+  width: 100%;
 }
 
 .footer-component__newsletter-section {
