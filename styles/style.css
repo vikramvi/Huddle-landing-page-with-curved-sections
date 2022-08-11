@@ -459,12 +459,22 @@ img {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  align-items: center;
 
   padding: 0 4rem 4rem 4rem;
 }
 
-.footer-component__social-section > i {
-  font-size: 3rem;
+.footer-component__social-section > img:nth-child(odd) {
+  width: 10%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
+}
+
+.footer-component__social-section > img:nth-child(even) {
+  width: 10%;
+  height: 90%;
+  background-color: white;
+  border-radius: 0.5rem;
 }
 
 /* ----------- ----------- ----------- desktop second approach ----------- ----------- ----------- */
@@ -803,6 +813,16 @@ img {
 
   .footer-component__social-section {
     padding: 6rem 4rem 6rem 10rem;
+  }
+
+  .footer-component__social-section > img:nth-child(odd) {
+    width: 5%;
+  }
+
+  .footer-component__social-section > img:nth-child(even) {
+    width: 6%;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+      brightness(103%) contrast(103%);
   }
 }
 
